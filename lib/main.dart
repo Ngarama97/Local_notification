@@ -42,6 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
         AwesomeNotifications().requestPermissionToSendNotifications();
       }
     });
+
+    NotificationController.initializeNotificationEventListeners();
     super.initState();
   }
 
